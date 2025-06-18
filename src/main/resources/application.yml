@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybd?serverTimezone=GMT%2B8
+    username: root
+    password: wjw959599
+  application:
+    name: LXYBack
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: false
+files:
+  upload:
+    path: G:/Mavensource/LXYBack/files/
